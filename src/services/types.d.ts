@@ -51,9 +51,25 @@ export declare global {
         exterior?: string;
     }
 
-    interface APIResponse {
-        data: any,
-        message: string,
-        type: 'success' | 'warning' | 'error'
+    interface ExtendedUserOffer extends UserOfferClosed {
+        discountedPrice: number;
+        profit: number;
+        calendar: {
+            date: string;
+            time: string;
+            year: number;
+            monthName: string;
+            month: number;
+            day: number;
+            hour: number;
+            weekOfMonth: string;
+        };
+    }
+
+    interface Sales {
+        items: ExtendedUserOffer[];
+        totalProfit: number;
+        dailyProfit: number;
+        yesterdayProfit: number;
     }
 }

@@ -23,6 +23,7 @@ interface UserData {
     totalPurchasePrice: number,
     totalSellPrice: number,
     totalProfit: number,
+    totalProfitTradeLock: number
     totalSuggestedPrice: number
 }
 

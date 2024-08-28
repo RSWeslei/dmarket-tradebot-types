@@ -7,8 +7,8 @@ enum GameType {
 }
 
 interface Attrs {
-    paintSeed: string,
-    phase: Phase,
+    paintSeed?: string,
+    phase?: Phase,
     floatPartValue: FloatPartValue
 }
 

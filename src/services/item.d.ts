@@ -198,10 +198,14 @@ export declare global {
         /* Preço líquido que irei receber do item (se baseando com o preço do item mais barato do dmarket)
         após a taxa do dmarket. Obs. Net = Liquído */
         netPriceAfterFee: number,
-        /* Lucro */
+        /* Lucro sem trade lock */
         profit: number,
-        /* Preço do item mais barato do dmarket menos 1 cents (para ficar a frente na lista) */
+        /* Lucro com trade lock */
+        profitTradeLock: number
+        /* Preço do item mais barato (sem trade lock) do dmarket menos 1 cents (para ficar a frente na lista) */
         dmarketLowestPrice: number;
+        /* Preço do item mais barato (com trade lock) do dmarket menos 1 cents (para ficar a frente na lista) */
+        dmarketLowestPriceTradeLock: number
     }
 
     // GET /exchange/v1/user/items

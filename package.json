@@ -1,21 +1,16 @@
 {
-  "name": "dmarket-tradebot-types",
+  "name": "@wessly/dmarket-tradebot-types",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.4.5"
-  },
-  "compilerOptions": {
-    "outDir": "./dist",
-    "declaration": true,
-    "declarationDir": "./dist/types"
-  },
-  "include": ["src"]
+  }
 }

@@ -25,15 +25,16 @@ export enum OfferSortType {
 }
 
 export enum Phase {
-    Phase1= 'phase-1',
-    Phase2= 'phase-2',
-    Phase3= 'phase-3',
-    Phase4= 'phase-4',
-    Ruby= 'ruby',
-    Emerald= 'emerald',
-    Sapphire= 'sapphire',
-    BlackPearl= 'black-pearl',
-    Any = 'any'
+    Phase1 = 'phase-1',
+    Phase2 = 'phase-2',
+    Phase3 = 'phase-3',
+    Phase4 = 'phase-4',
+    Ruby = 'ruby',
+    Emerald = 'emerald',
+    Sapphire = 'sapphire',
+    BlackPearl = 'black-pearl',
+    Any = '',
+    AnyString = 'any'
 }
 
 export enum FloatPartValue {
@@ -46,7 +47,7 @@ export enum FloatPartValue {
     WW1 = 'WW-1', WW2 = 'WW-2', WW3 = 'WW-3',
     WW4 = 'WW-4', BS0 = 'BS-0', BS1 = 'BS-1',
     BS2 = 'BS-2', BS3 = 'BS-3', BS4 = 'BS-4',
-    Any = 'any'
+    Any = '', AnyString = 'any'
 }
 
 export enum GameID {
@@ -62,4 +63,10 @@ export enum TreeFilters {
 
 export enum Currency {
     Dollar = 'USD'
+}
+
+export enum OperationType {
+    Offer = 'Offer',
+    Order = 'Order',
+    Target = 'Target',
 }

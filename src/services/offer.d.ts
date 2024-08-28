@@ -146,7 +146,7 @@ export declare global {
     // GET /marketplace-api/v1/user-offers/closed
     interface UserClosedOffersParams {
         Offset?: string,
-        Limit?: string
+        Limit: string
         OrderDir?: 'asc' | 'desc'
     }
 

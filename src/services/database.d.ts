@@ -10,7 +10,8 @@ export declare global {
         itemType: string,
         category: string,
         trade_eligible: boolean,
-        average_daily_sales: number
+        average_daily_sales: number,
+        average_price: number
     }
 
     interface ItemInfoExternal extends ItemInfo {
