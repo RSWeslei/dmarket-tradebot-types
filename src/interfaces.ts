@@ -36,7 +36,7 @@ interface GetInfoData {
     balance: UserBalanceResponse
 }
 
-export {
+export type {
     AddOfferLogInfo,
     GetAllOffersData,
     GetInfoData,
